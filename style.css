@@ -1,0 +1,113 @@
+body{
+ background-image: linear-gradient(to bottom right, #cc0066, white);
+  background-repeat: no-repeat, repeat;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li:not(.new) {
+  float: left;
+}
+
+.new{
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #cc0066;
+}
+
+.active {
+  background-color: #cc0066;
+}
+.active:hover{
+    text-decoration: none;
+    color: white;
+}
+.text{
+  background-color: white;
+  opacity: 50%;
+  width: 50%;
+  text-align: center;
+
+}
+.content{
+  background-color: white;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 13px 11px 7px -10px rgba(0,0,0,0.75);
+}
+
+.cool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.cool p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.cool p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.cool p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.cool p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.console-container {
+
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
